@@ -1,0 +1,18 @@
+*:hover {
+  transition: all .3s ease-in-out;
+}
+.navbar {
+  min-height: 4.5rem;
+}
+.navbar-item img {
+  max-height: 2.7rem;
+}
+
+/********************* Text *************************/
+.is-muted {
+  color: $grey-light!important;
+}
+a.is-muted:hover{
+  color: $grey!important;
+}
+/********************* Text *************************/
