@@ -1,4 +1,7 @@
 @extends('layouts.dashboard.manage')
+@section('title')
+    پنل مدیریت
+@endsection
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/dashboard') }}/dist/css/persian-datepicker-0.4.5.min">
     <link rel="stylesheet" href="{{ asset('css/dashboard') }}/bower_components/morris.js/morris.css">

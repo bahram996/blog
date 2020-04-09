@@ -23,7 +23,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href=""><i class="fa fa-circle-o"></i>مدیریت کاربران</a></li>
+                    <li><a href="{{ route('users.index') }}"><i class="fa fa-circle-o"></i>مدیریت کاربران</a></li>
+                    <li><a href="{{ route('users.create') }}"><i class="fa fa-circle-o"></i>افزودن کاربر جدید</a></li>
                     <li><a href=""><i class="fa fa-circle-o"></i> باکس ها</a></li>
                     <li><a href=""><i class="fa fa-circle-o"></i> فیکس شده</a></li>
                     <li><a href=""><i class="fa fa-circle-o"></i> سایدبار</a></li>

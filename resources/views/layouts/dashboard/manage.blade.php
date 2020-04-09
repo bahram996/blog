@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} - @yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/dashboard') }}/dist/css/bootstrap-theme.css">
     <!-- Bootstrap rtl -->
     <link rel="stylesheet" href="{{ asset('css/dashboard') }}/dist/css/rtl.css">
@@ -15,7 +15,7 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/dashboard') }}/dist/css/AdminLTE.css">
     <link rel="stylesheet" href="{{ asset('css/dashboard') }}/dist/css/skins/_all-skins.min.css">
-@yield('styles')
+    @yield('styles')
 <!-- Google Font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -30,11 +30,11 @@
             <section class="content-header">
                 <h1>
                     داشبرد
-                    <small>کنترل پنل</small>
+                    <small>@yield('title')</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> خانه</a></li>
-                    <li class="active">داشبرد</li>
+                    <li class="active">@yield('title')</li>
                 </ol>
             </section>
             <section class="content">
@@ -49,6 +49,7 @@
 <script src="{{ asset('css/dashboard') }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('css/dashboard') }}/dist/js/adminlte.min.js"></script>
+<script src="{{ asset('js') }}/vue-dashboard.js"></script>
 @yield('scripts')
 </body>
 </html>

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -59587,33 +59587,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-
-Vue.use(buefy__WEBPACK_IMPORTED_MODULE_0__["default"]); // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
-var app = new Vue({
-  el: '#app',
-  data: {}
-}); // $(document).ready(function(){
-//     $('button').hover(function(e){
-//        $(this).toggleClass('is-open');
-//     });
-// });
-
-/***/ }),
-
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -59670,38 +59643,32 @@ if (token) {
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./resources/js/vue-dashboard.js":
+/*!***************************************!*\
+  !*** ./resources/js/vue-dashboard.js ***!
+  \***************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-/***/ }),
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
-/***/ "./resources/sass/vue-dashboard.scss":
-/*!*******************************************!*\
-  !*** ./resources/sass/vue-dashboard.scss ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
+Vue.use(buefy__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
-/***/ 0:
-/*!*************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/vue-dashboard.scss ./resources/sass/app.scss ***!
-  \*************************************************************************************************/
+/***/ 1:
+/*!*********************************************!*\
+  !*** multi ./resources/js/vue-dashboard.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\xampp\htdocs\blog\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! E:\xampp\htdocs\blog\resources\sass\vue-dashboard.scss */"./resources/sass/vue-dashboard.scss");
-module.exports = __webpack_require__(/*! E:\xampp\htdocs\blog\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! E:\xampp\htdocs\blog\resources\js\vue-dashboard.js */"./resources/js/vue-dashboard.js");
 
 
 /***/ })
